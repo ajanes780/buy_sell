@@ -3,7 +3,132 @@
 body {
   background-color: #EEE;
 
+
   h1 {
     color: #244751;
   }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: green;
+  border: 2px solid black;
+}
+
+.title{
+display: flex;
+flex-direction:column;
+width: 350px;
+height: 150px;
+background-color:blue ;
+align-items: center;
+justify-content: center;
+}
+
+.usercontrols{
+  display: flex;
+  flex-direction:column;
+  width: 350px;
+  height: 150px;
+  background-color:blue ;
+  align-items: center;
+  justify-content: center;
+  }
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: red;
+  width: auto;
+  height:900px ;
+}
+
+.featured-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.featureitem-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.featureitem-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.featureitem-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.descriptionandlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-size: 300px;
+  background-image: url(https://homedepot.scene7.com/is/image/homedepotcanada/p_1001196936.jpg?wid=1000&hei=1000&op_sharpen=1);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+}
+#top{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: grey;
 }
