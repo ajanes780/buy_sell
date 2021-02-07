@@ -60,6 +60,9 @@ app.get("/loggedin", (req, res) => {
   res.render("loggedin.ejs");
 });
 
+app.get("/singleproduct", (req, res) => {
+  res.render("singleproductpage.ejs");
+});
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
