@@ -60,8 +60,6 @@ app.get("/loggedin", (req, res) => {
   res.render("loggedin.ejs");
 });
 
-console.log(" ET phone home ");
-etphonehome();
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });

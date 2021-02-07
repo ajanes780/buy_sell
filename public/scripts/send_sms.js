@@ -28,8 +28,7 @@ const etphonehome = function (clientMessage, reciverNumber) {
 };
 
 // pass the clientmessage and  the phone number
-etphonehome(clientMessage);
-
+// etphonehome(clientMessage)
 console.log("Et Phone Home");
 console.log(".............");
 console.log("Et Phone Home");
