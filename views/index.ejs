@@ -10,32 +10,22 @@
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
-<header>
-  <div class= "title">
-    <h2>SITE NAME</h2>
-  </div>
-  <div class= "usercontrols" >
-    <h6>user controls</h6>
-    <button> this is button  </button>
-    <button > this is button 2 </button>
-  </div>
-</header>
-<body>
 
-  <div class= "main-container">
+  <body>
+    <%- include('../views/partials/header') %>
 
-      <div class= "featured-items">
-          <div class= "featureitem-1"><h5>this will be feature box</h5> </div>
-          <div class= "featureitem-2"><h5>this will be feature box</h5> </div>
-          <div class= "featureitem-3"><h5>this will be feature box</h5> </div>
+    <div class="main-container">
+      <div class="featured-items">
+        <div class="featureitem-1"><h5>this will be feature box</h5></div>
+        <div class="featureitem-2"><h5>this will be feature box</h5></div>
+        <div class="featureitem-3"><h5>this will be feature box</h5></div>
       </div>
 
-      <div class= "descriptionandlogo">
-          <div class= "description"> <h5> This is some text about our app</h5> </div>
-          <div class= "logo"> <h5 id="top">  "This our logo</h5>  </div>
+      <div class="descriptionandlogo">
+        <div class="description"><h5>This is some text about our app</h5></div>
+        <div class="logo"><h5 id="top">"This our logo</h5></div>
       </div>
-
-
     </div>
+    <%- include('../views/partials/footer') %>
   </body>
 </html>
