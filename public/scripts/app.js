@@ -1,13 +1,5 @@
 $(() => {
-<<<<<<< HEAD
   console.log(" JQ loaded ");
-=======
-  //TODO - fix asynchronous issue with ajax call so i can access the object globally
-  //and pass it into an .on "click" function
-  let globalArray = [];
-
-  //POPULATE FEATURED ITEMS WITH RANDOM IMGS FROM DATABASE
->>>>>>> 9276224514763000e83619b06c5218a2bd9a80ac
   $.ajax({
     method: "GET",
     url: "/api/products",
@@ -49,8 +41,8 @@ $(() => {
       }
       //let a = $(`.featureitem-1`);
 
-//let textLength = $("textarea")
-//let textLength = $("textarea").val().length;
+      //let textLength = $("textarea")
+      //let textLength = $("textarea").val().length;
 
       //console.log(a);
       $(".featureitem-1").on("click", function () {
@@ -59,14 +51,10 @@ $(() => {
         $(".product-Image").empty();
         $(".product-Image").html(`<img src="${objArray[0]["picture_url"]}">`);
       });
-
-    }
-
-
+    },
   });
 
   //FEATURE ITEMS REDIRECT
-
 
   $(".featureitem-2").on("click", function () {
     window.location.href = "/singleproduct";

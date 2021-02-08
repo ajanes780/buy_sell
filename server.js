@@ -65,6 +65,9 @@ app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
 
+app.get("/search", (req, res) => {
+  res.render("search.ejs");
+});
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
