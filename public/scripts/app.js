@@ -1,4 +1,5 @@
 $(() => {
+  console.log(" JQ loaded ");
   $.ajax({
     method: "GET",
     url: "/api/users",

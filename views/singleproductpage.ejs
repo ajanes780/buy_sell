@@ -11,17 +11,27 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/app.js"></script> -->
+    <script type="text/javascript" src="scripts/singleproduct.js"></script>
   </head>
 
   <body>
     <%- include('../views/partials/header') %>
     <div class="main-product-container">
       <div class="product-Image">
-        <img src="" />
+        <h2 id="product-name">product Name</h2>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqFzBSBL5TyQfhVBfsLOp39aESHysjCKhiQ&usqp=CAU"
+        />
       </div>
+
       <div class="product-description">
         <h2>this is the product description</h2>
+        <h6>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </h6>
       </div>
     </div>
     <%- include('../views/partials/footer') %>
