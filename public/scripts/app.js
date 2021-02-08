@@ -1,13 +1,9 @@
 $(() => {
-<<<<<<< HEAD
   //TODO - fix asynchronous issue with ajax call so i can access the object globally
   //and pass it into an .on "click" function
   let globalArray = [];
 
   //POPULATE FEATURED ITEMS WITH RANDOM IMGS FROM DATABASE
-=======
-  console.log(" JQ loaded ");
->>>>>>> d4454f9d69503e41730091c229b05c4d93c29367
   $.ajax({
     method: "GET",
     url: "/api/products",
