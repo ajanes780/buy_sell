@@ -64,6 +64,7 @@ app.get("/loggedin", (req, res) => {
 app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });

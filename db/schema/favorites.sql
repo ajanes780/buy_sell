@@ -1,7 +1,7 @@
 
-DROP TABLE IF EXISTS favourites CASCADE;
-CREATE TABLE favourites (
+DROP TABLE IF EXISTS favorites CASCADE;
+CREATE TABLE favorites (
   id SERIAL PRIMARY KEY NOT NULL,
-  user_id REFERENCES users(id) ON DELETE CASCADE,
-  product_id REFERENCES products(id) ON DELETE CASCADE
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  product_id INTEGER REFERENCES products(id) ON DELETE CASCADE
 );
