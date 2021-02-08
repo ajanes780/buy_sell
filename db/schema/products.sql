@@ -4,8 +4,9 @@ CREATE TABLE products (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR (255),
   price INTEGER,
-  picture_url VARCHAR(255),
+  picture_url text,
   description VARCHAR(255),
-  catagory VARCHAR(255),
-  stock INTEGER
+  category VARCHAR(255),
+  stock INTEGER,
+  featured BOOLEAN DEFAULT FALSE NOT NULL
 );
