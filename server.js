@@ -64,13 +64,10 @@ app.get("/loggedin", (req, res) => {
 app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
-<<<<<<< HEAD
-=======
 app.get("/products/:id", (req, res) => {
   res.send(req.params.id);
 });
 
->>>>>>> 09781eafeb4f4e07cc65221fbb5a4fdd0f379a89
 app.get("/search", (req, res) => {
   res.render("search.ejs");
 });
