@@ -65,7 +65,10 @@ app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
 app.get("/products/:id", (req, res) => {
-  res.send(req.params.id);
+  res.send(req.query.id);
+});
+app.get("/products/:name", (req, res) => {
+  res.render("singleproductpage.ejs");
 });
 
 app.get("/search", (req, res) => {

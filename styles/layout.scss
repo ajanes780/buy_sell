@@ -329,3 +329,14 @@ header {
   justify-content: center;
   background-color: transparent;
 }
+
+.search-results {
+  width: 250px;
+  height: 250px;
+}
+
+.search-results img {
+  max-width: 250px;
+  max-height: 250px;
+  border: 1px black solid;
+}
