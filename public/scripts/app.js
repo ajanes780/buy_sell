@@ -1,13 +1,38 @@
 $(() => {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8f24ca387d00b20125258ebb94bbfc615524ea1a
+>>>>>>> 09781eafeb4f4e07cc65221fbb5a4fdd0f379a89
+=======
+>>>>>>> fb5d9b3d80483d90caa11ec9ef47b713a6c51714
   //TODO - fix asynchronous issue with ajax call so i can access the object globally
   //and pass it into an .on "click" function
   let globalArray = [];
 
   //POPULATE FEATURED ITEMS WITH RANDOM IMGS FROM DATABASE
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  console.log(" JQ loaded ");
+  let products = [];
+
+=======
+=======
+  console.log(" JQ loaded ");
+>>>>>>> d4454f9d69503e41730091c229b05c4d93c29367
+>>>>>>> 8f24ca387d00b20125258ebb94bbfc615524ea1a
+>>>>>>> 09781eafeb4f4e07cc65221fbb5a4fdd0f379a89
+=======
 
   console.log(" JQ loaded ");
   let products = [];
 
+>>>>>>> fb5d9b3d80483d90caa11ec9ef47b713a6c51714
   $.ajax({
     method: "GET",
     url: "/api/products",

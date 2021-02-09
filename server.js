@@ -74,6 +74,9 @@ app.get("/products/:name", (req, res) => {
 app.get("/search", (req, res) => {
   res.render("search.ejs");
 });
+app.get("/favourites", (req, res) => {
+  res.render("favourites.ejs")
+});
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
