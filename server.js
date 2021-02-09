@@ -64,6 +64,9 @@ app.get("/loggedin", (req, res) => {
 app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
+app.get("/products/:id", (req, res) => {
+  res.send(req.params.id);
+});
 
 app.get("/search", (req, res) => {
   res.render("search.ejs");
