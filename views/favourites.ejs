@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS AND JQUERY STUFF-->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/fav.css" type="text/css" />
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+  </head>
+
+  <body>
+    <%- include('../views/partials/header') %>
+    <div class="fav-container">
+      <h2>Your Favourites</h2>
+      <div class="fav-items">
+        <div class="favitem-1"><img src=https://cdn.shoplightspeed.com/shops/632508/files/22624367/jan-jul-summer-hats.jpg><h5>this will be the description</h5></div>
+        <div class="favitem-2"><img src=https://www.ikea.com/us/en/images/products/knorva-hat-blue__0812162_PE771942_S5.JPG><h5>this will be the description</h5></div>
+        <div class="favitem-3"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_SZZVdv8zL0T5JpKTamwmvhuwDQmC8-n8zQ&usqp=CAU><h5>this will be the description</h5></div>
+        <div class="favitem-4"><img src=https://images-na.ssl-images-amazon.com/images/I/91VEo3TX4FL._AC_UX522_.jpg><h5>this will be the description</h5></div>
+        <div class="favitem-5"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Woz8uZPi7PAh2PMLCuaxM9kDZinmoil9WgWHKe-o5jTL5AccBDHH78W-bwZDPGwl9qwvR09d&usqp=CAc><h5>this will be the description</h5></div>
+      </div>
+    </div>
+    <%- include('../views/partials/footer') %>
+  </body>
+</html>

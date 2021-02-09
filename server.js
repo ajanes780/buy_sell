@@ -64,9 +64,11 @@ app.get("/loggedin", (req, res) => {
 app.get("/singleproduct", (req, res) => {
   res.render("singleproductpage.ejs");
 });
-
 app.get("/search", (req, res) => {
   res.render("search.ejs");
+});
+app.get("/favourites", (req, res) => {
+  res.render("favourites.ejs")
 });
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
