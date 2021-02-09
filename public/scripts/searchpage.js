@@ -1,16 +1,17 @@
-// const { response } = require("express");
-
 $(() => {
+  // access search form data results
   let $form = "";
   $(".search-form").submit(function (event) {
     event.preventDefault();
     const formdata = $(this).serialize();
     $form = $("#text-aera").val();
+    // querry the api for the search request
     $.ajax({
       method: "get",
       url: "/api/products",
       data: $form,
     })
+      // check the response from our search againts database/response
       .then((response) => {
         console.log("yooooooo");
         let x = 0;
@@ -22,18 +23,17 @@ $(() => {
           x += 1;
         }
       })
+      // push our response from the search results to the DOM container search- results
       .then((response) => {
-        // $.ajax({
-        //   method: "get",
-        //   url: `/products/:${response}`,
         $(`.search-results`).empty();
         $(`.search-results`).html(
           `<a href="/products/:${response.name} "> <img src="${response.picture_url}"> </a>`
         );
+
+        // this is a onclick function which just logs the objec atm
         $(`.search-results`).click(function () {
           console.log(obj);
         });
       });
   });
 });
-// });
