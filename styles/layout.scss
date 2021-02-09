@@ -303,3 +303,29 @@ header {
   height: 500px;
   background-color: grey;
 }
+
+.twenty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: none;
+  background-size: contain;
+  width: auto;
+  height: 600px;
+  margin-top: 200px;
+}
+#twenty-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
