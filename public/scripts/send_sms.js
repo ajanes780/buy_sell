@@ -14,7 +14,7 @@ const reciverNumber = "+1780720138"; // must be a string and have +1 at start
 // this  is the Et call home function
 // this is abasic  function that will take in two parmas to message people
 
-const etphonehome = function (clientMessage, reciverNumber) {
+const etPhoneHome = function (clientMessage, reciverNumber) {
   client.messages
     .create({
       body: clientMessage,
@@ -42,4 +42,4 @@ console.log("Et Phone Home");
 //   });
 // });
 
-module.exports = etphonehome;
+module.exports = { etPhoneHome };

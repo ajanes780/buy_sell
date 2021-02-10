@@ -1,6 +1,7 @@
 // store ajax api requests
 $(() => {
   console.log(" JQ loaded ");
+
   // make a request to the api for info  and return a promise called response
   $.ajax({
     method: "GET",
@@ -49,8 +50,7 @@ $(() => {
           console.log(" you clicked me");
         });
         $(".textme").on("click", function () {
-          window.location.href =
-            "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
+          etPhoneHome();
           console.log(" you clicked me");
         });
         $(".textme").on("click", function () {

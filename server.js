@@ -9,6 +9,7 @@ const bodyParser = require("body-parser");
 const sass = require("node-sass-middleware");
 const app = express();
 const morgan = require("morgan");
+const etPhoneHome = require("../buy_sell/public/scripts/send_sms");
 
 // set up messageing with twilio
 
@@ -75,7 +76,7 @@ app.get("/search", (req, res) => {
   res.render("search.ejs");
 });
 app.get("/favourites", (req, res) => {
-  res.render("favourites.ejs")
+  res.render("favourites.ejs");
 });
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
