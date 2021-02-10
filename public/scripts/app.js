@@ -53,7 +53,7 @@ $(() => {
           $(".email").on("click", function () {
             window.location.href =
               "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
-            console.log(" you clicked me");
+            console.log(obj.name);
           });
           $(".textme").on("click", function () {
             etPhoneHome();

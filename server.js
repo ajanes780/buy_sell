@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const sass = require("node-sass-middleware");
 const app = express();
 const morgan = require("morgan");
-const etPhoneHome = require("../buy_sell/public/scripts/send_sms");
+// const etPhoneHome = require("../buy_sell/public/scripts/send_sms");
 
 // set up messageing with twilio
 
@@ -43,13 +43,15 @@ const usersRoutes = require("./routes/users");
 const widgetsRoutes = require("./routes/widgets");
 const homeRoutes = require("./routes/home");
 const productRoutes = require("./routes/products");
-
+const insertfav = require("./routes/insertfav");
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
 app.use("/api/users", usersRoutes(db));
 app.use("/api/widgets", widgetsRoutes(db));
 app.use("/api/home", homeRoutes(db));
 app.use("/api/products", productRoutes(db));
+app.use("/api/insertfav", insertfav(db));
+//api for favorites
 
 // Note: mount other resources here, using the same pattern above
 
