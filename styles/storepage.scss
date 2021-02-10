@@ -1,0 +1,84 @@
+.itemsforsale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: transparent;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+.sale-coloumn-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 800px;
+  margin: 20px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.storeitem-1 img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+.saleitem-title h2 {
+  display: flex;
+  justify-content: center;
+}
+
+// for single product
+
+.single-product-markup img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.single-product-markup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+  background-color: transparent;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+.icongroup {
+  display: flex;
+  width: 250px;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+
+.saleitem-title h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.saleitem-title h3 {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  color: #acb0bd;
+  margin: 5px;
+}
+
+i:hover {
+  color: #0b3948;
+}

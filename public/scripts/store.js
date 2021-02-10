@@ -31,12 +31,17 @@ $(() => {
     />
     </div>
     <div class= "icongroup">
+<<<<<<< HEAD
     <button class="email" > Email Me </button>
     <button class="textme" > Text Me </button>
     <button class="fav" > Favorite </button>
     <i class="far fa-envelope"></i>
     <i class="fas fa-sms"></i>
     <i class="fas fa-heart"></i>
+=======
+    <i class="far fa-envelope fa-lg"></i>
+    <i class="fas fa-heart fa-lg"></i>
+>>>>>>> 4c2b5f06e6f3a7e560da5c2fc65bcaa5ede5bb93
     </div>
     </div>
 

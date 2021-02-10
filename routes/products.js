@@ -13,13 +13,13 @@ module.exports = (db) => {
     let query = `SELECT * FROM products`;
     console.log(query);
     db.query(query)
-      .then((data) => {
-        const products = data.rows;
-        res.json({ products });
-      })
-      .catch((err) => {
-        res.status(500).json({ error: err.message });
-      });
+    .then((data) => {
+      const products = data.rows;
+      res.json({ products });
+    })
+    .catch((err) => {
+      res.status(500).json({ error: err.message });
+    });
   });
   return router;
 };
