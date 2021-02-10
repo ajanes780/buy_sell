@@ -31,8 +31,8 @@ $(() => {
     />
     </div>
     <div class= "icongroup">
-    <i class="far fa-envelope"></i>
-    <i class="fas fa-heart"></i>
+    <i class="far fa-envelope fa-lg"></i>
+    <i class="fas fa-heart fa-lg"></i>
     </div>
     </div>
     `;

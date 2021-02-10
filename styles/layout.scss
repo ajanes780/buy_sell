@@ -8,13 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   // padding: 8px;
-  h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    color: #000000;
-  }
 }
 ul {
   list-style-type: none;
@@ -48,7 +41,6 @@ footer {
   align-items: center;
   height: 150px;
   background-color: #0b3948;
-  border: 2px solid black;
   margin-top: 100px;
 }
 
@@ -57,7 +49,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 200px;
+  height: 150px;
   align-items: center;
   background-color: black;
   // background-image: linear-gradient(#d9dbf1, #acb0bd, #0b3948);
@@ -76,15 +68,6 @@ header {
   justify-content: center;
 }
 
-.usercontrols {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 150px;
-  background-color: blue;
-  align-items: center;
-  justify-content: center;
-}
 
 .main-container {
   display: flex;
@@ -96,177 +79,14 @@ header {
   background-repeat: none;
   background-size: contain;
   width: auto;
-  height: 900px;
+  height: auto;
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 
-.featured-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: auto;
-  margin: 20px;
-  padding: 10px;
-  background-color: transparent;
-}
-
-.featureitem-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: transparent;
-}
-
-.featureitem-1 img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px black;
-  border: solid;
-}
-
-.featureitem-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: transparent;
-}
-
-.featureitem-2 img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px black;
-  border: solid;
-}
-
-.featureitem-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: transparent;
-}
-
-.featureitem-3 img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px black;
-  border: solid;
-}
-
-.descriptionandlogo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 700px;
-  height: auto;
-  margin: 20px;
-  padding: 10px;
-  background-color: transparent;
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // align-items: center;
-  width: 500px;
-  // height: 500px;
-  background-color: transparent;
-}
-#title1 {
-  justify-items: center;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  background-size: 300px;
-  background-image: url("https://i.etsystatic.com/17490267/d/il/b501e2/2377177026/il_340x270.2377177026_7m83.jpg?version=0");
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-#top {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  background-color: grey;
-}
 
 // THESE ARE ALL THE CSS FOR THE LOGGED IN USERS
 
-.itemsforsale {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 700px;
-  height: auto;
-  margin: 20px;
-  padding: 10px;
-  background-color: #d0cdd7;
-  box-shadow: 5px 5px 5px 5px #0b3948;
-}
-
-.sale-coloumn-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: 800px;
-  margin: 20px;
-  padding: 10px;
-  background-color: transparent;
-}
-.sale-coloumn-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: 800px;
-  margin: 20px;
-  padding: 10px;
-  background-color: transparent;
-}
-.sale-coloumn-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: 800px;
-  margin: 20px;
-  padding: 10px;
-  background-color: transparent;
-}
-
-.storeitem-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 150px;
-  height: 150px;
-  // border: 1px solid black;
-  background-color: transparent;
-}
 
 // single product page
 .main-product-container {
@@ -306,118 +126,3 @@ header {
   background-color: grey;
 }
 
-.twenty {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: none;
-  background-size: contain;
-  width: auto;
-  height: 600px;
-  margin-top: 200px;
-}
-#twenty-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.search-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: transparent;
-}
-
-.search-results {
-  width: 250px;
-  height: 250px;
-}
-
-.search-results img {
-  max-width: 250px;
-  max-height: 250px;
-  border: 1px black solid;
-}
-
-.storeitem-1 img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px 5px 5px #0b3948;
-}
-
-.saleitem-title h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.featureitem-title h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.featured-items img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px 5px 5px #0b3948;
-}
-
-.single-product-markup img {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-.single-product-markup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 500px;
-  background-color: #d0cdd7;
-  margin-top: 100px;
-  padding-bottom: 200px;
-  box-shadow: 5px 5px 5px 5px #0b3948;
-}
-
-icongroup {
-  display: flex;
-  justify-content: flex-end;
-}
-
-i {
-  color: red;
-  size: 3px;
-}
-
-i:hover {
-  color: blue;
-  size: 3px;
-}
-
-// .storeitem-2 img {
-//   max-width: 100%;
-//   max-height: 100%;
-//   box-shadow: 5px 5px #0b3948;
-// }
-
-// .storeitem-1 img {
-//   max-width: 100%;
-//   max-height: 100%;
-//   box-shadow: 5px 5px #0b3948;
-// }
-// .element {
-//   animation: pulse 5s infinite;
-// }
-
-// @keyframes pulse {
-//   0% {
-//     background-color: #001f3f;
-//   }
-//   100% {
-//     background-color: #ff4136;
-//   }
-// }
