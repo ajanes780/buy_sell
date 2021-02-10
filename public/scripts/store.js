@@ -31,13 +31,33 @@ $(() => {
     />
     </div>
     <div class= "icongroup">
+    <button class="email" > Email Me </button>
+    <button class="textme" > Text Me </button>
+    <button class="fav" > Favorite </button>
     <i class="far fa-envelope"></i>
+    <i class="fas fa-sms"></i>
     <i class="fas fa-heart"></i>
     </div>
     </div>
+
     `;
         // this will add the mark up to the sale item container
         $(".saleitem-title").prepend(markup);
+        $(".email").on("click", function () {
+          window.location.href =
+            "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
+          console.log(" you clicked me");
+        });
+        $(".textme").on("click", function () {
+          window.location.href =
+            "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
+          console.log(" you clicked me");
+        });
+        $(".textme").on("click", function () {
+          window.location.href =
+            "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
+          console.log(" you clicked me");
+        });
       });
       y += 1;
     }
