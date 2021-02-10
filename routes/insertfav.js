@@ -3,12 +3,13 @@ const router = express.Router();
 
 module.exports = (db) => {
   router.post("/", (req, res) => {
-    console.log("this is req body", req.body.id);
+    console.log("this is req body", req.body);
     // insert item to favorites data
-    db.query(`INSERT INTO favourites (product_id) VALUES (${req.body.id});`)
+    let query = `INSERT INTO favorites (product_id) VALUES (${req.body.id}); `;
+    db.query(query)
       .then((data) => {
-        const favorites = data.rows;
-        res.json({ favorites });
+        const widgets = data.rows;
+        res.json({ widgets });
       })
       .catch((err) => {
         res.status(500).json({ error: err.message });
