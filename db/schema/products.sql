@@ -7,6 +7,5 @@ CREATE TABLE products (
   picture_url text,
   description VARCHAR(255),
   category VARCHAR(255),
-  stock INTEGER,
-  featured BOOLEAN DEFAULT FALSE NOT NULL
+  stock INTEGER
 );

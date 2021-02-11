@@ -17,4 +17,48 @@
   align-items: center;
 }
 
+.create-listing {
+  width: 250px;
+  height: 50px;
+  border: 1 px white;
+  box-shadow: 0px 5px 10px 10px silver;
+  border-radius: 50px;
+}
 
+button:hover,
+button:focus {
+  outline: none;
+}
+
+#name {
+  width: 400px;
+  border-radius: 50px;
+  resize: none;
+}
+#price {
+  width: 400px;
+  border-radius: 50px;
+  resize: none;
+}
+#description {
+  width: 400px;
+  border-radius: 50px;
+  resize: none;
+}
+#name {
+  width: 400px;
+  border-radius: 50px;
+  resize: none;
+}
+#url {
+  width: 400px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.submit-listing {
+  height: 50px;
+  box-shadow: 0px 5px 10px 10px silver;
+  border-radius: 50px;
+}
