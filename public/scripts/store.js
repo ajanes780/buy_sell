@@ -41,6 +41,7 @@ $(() => {
         <i class="far fa-envelope"></i>
         <i class="fas fa-sms"></i>
         <i class="fas fa-heart"></i>
+        <i class="fas fa-save"></i>
         </div>
         `;
         $(".saleitem-title").prepend(markup);

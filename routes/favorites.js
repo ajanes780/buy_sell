@@ -12,7 +12,8 @@ module.exports = (db) => {
   router.get("/", (req, res) => {
     let query = `SELECT products.id, products.name, products.price, products.picture_url, products.description
     FROM products JOIN favorites ON product_id = products.id
-    GROUP BY products.id;`;
+    GROUP BY products.id
+    LIMIT 5;`;
     console.log(query);
     db.query(query)
       .then((data) => {
