@@ -68,7 +68,6 @@ header {
   justify-content: center;
 }
 
-
 .main-container {
   display: flex;
   flex-direction: row;
@@ -84,9 +83,7 @@ header {
   margin-bottom: 100px;
 }
 
-
 // THESE ARE ALL THE CSS FOR THE LOGGED IN USERS
-
 
 // single product page
 .main-product-container {
@@ -126,3 +123,15 @@ header {
   background-color: grey;
 }
 
+.create-listing-markup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-form {
+  display: flex;
+  flex-direction: column;
+  resize: none;
+}

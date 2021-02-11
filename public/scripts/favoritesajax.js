@@ -21,6 +21,7 @@ $(() => {
           <h3>
           ${obj.description}
           </h3>
+          <h3> $${obj.price}</h3>
     </div>
 
     <img

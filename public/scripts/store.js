@@ -7,6 +7,7 @@ $(() => {
     let y = 1;
     let productId = [];
     let objArray = [];
+    let saved = false;
 
     while (productId.length < 9) {
       let number = Math.floor(Math.random() * images.length);
@@ -28,6 +29,7 @@ $(() => {
               <h3>
               ${obj.description}
               </h3>
+              <h3> $${obj.price}</h3>
         </div>
 
         <img
@@ -38,11 +40,10 @@ $(() => {
         <button class="email" > Email Me </button>
         <button class="textme" > Text Me </button>
         <button class="fav" > Favorite </button>
-        <i class="far fa-envelope"></i>
-        <i class="fas fa-sms"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-save"></i>
+        <button class="save" > Sold </button>
+
         </div>
+        <div id="saved"></div>
         `;
         $(".saleitem-title").prepend(markup);
         $(".email").on("click", function () {
@@ -67,7 +68,21 @@ $(() => {
 
           console.log(" you fav me");
         });
+        $(".save").on("click", function () {
+          console.log(saved);
+          $("#saved").empty();
+          if (saved === false) {
+            $("#saved").empty();
+            $("#saved").append(`<i class="fas fa-hand-holding-usd"> Sold!</i>`);
+            // $("#saved").css("color", "red");
+            saved = true;
+          } else {
+            $("#saved").empty();
+            saved = false;
+          }
+        });
       });
+
       y++;
     }
   });
