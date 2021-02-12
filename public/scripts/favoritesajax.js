@@ -55,7 +55,7 @@ $(() => {
             url: "/api/twillo",
             datatype: "string",
             data: form,
-          }).then((response) => {
+          }).then(() => {
             alert("SMS Sent!");
           });
         });

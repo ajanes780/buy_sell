@@ -59,18 +59,14 @@ $(() => {
             event.preventDefault();
             let $form = "Hello! I would like to Inquire about your hat for sale :)"
             let form = $form;
-            console.log(typeof $form);
-            console.log(typeof form);
             $.ajax({
               method: "post",
               url: "/api/twillo",
               datatype: "string",
               data: form,
-            }).then((response) => {
-              alert("response from app.js from mainpage/featureitmes" + response);
+            }).then(() => {
+              alert("SMS Sent!");
             });
-            console.log(" you clicked me");
-
           });
           $(".textme").on("click", function () {
             window.location.href =
