@@ -9,10 +9,14 @@ const express = require("express");
 const router = express.Router();
 
 module.exports = (db) => {
-  router.get("/", (req, res) => {
-    console.log("this is req.body serach request ", Object.keys(req.body));
+  router.post("/", (req, res) => {
+    console.log("this is req.body serach request ", Object.values(req.body));
+    let a = Object.values(req.body);
+    let value = a[0];
 
-    let query = `SELECT * FROM products`;
+    let query = `SELECT name, picture_url, description, price
+    FROM products
+    WHERE price <= ${value} LIMIT 10 ;`;
     console.log(query);
     db.query(query)
       .then((data) => {

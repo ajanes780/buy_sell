@@ -18,15 +18,15 @@
   <body>
     <%- include('../views/partials/header') %>
     <div class="search-container">
-    <form class="search-form" action="/search" method="GET">
-     <div class="search-question">
-      <label for="search-text"> What Are You Looking For </label>
-      </div>
-      <textarea name="search-text" id="text-aera"></textarea>
-      <button type="submit" class="submit-button">Search</button>
-    </form>
-    <div class="search-results"></div>
-</div>
+      <form class="search-form" action="/search" method="GET">
+        <div class="search-question">
+          <label for="search-text"> What Are You Looking For </label>
+        </div>
+        <textarea name="search-text" id="text-aera"></textarea>
+        <button type="submit" class="submit-button">Search</button>
+      </form>
+      <div class="search-results" id="searchid"></div>
+    </div>
     <%- include('../views/partials/footer') %>
   </body>
 </html>

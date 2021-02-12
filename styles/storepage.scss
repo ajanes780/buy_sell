@@ -82,3 +82,13 @@ i {
 i:hover {
   color: #0b3948;
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.icongroup {
+  display: flex;
+  flex-direction: column;
+}
