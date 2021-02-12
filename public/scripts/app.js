@@ -1,4 +1,6 @@
 $(() => {
+
+
   $.ajax({
     method: "GET",
     url: "/api/products",
@@ -7,7 +9,8 @@ $(() => {
       console.log("this is ", images);
       let imgId = [];
       let objArray = [];
-
+      let saved = false;
+      let favorite = false;
       //PICK 3 RANDOM PRODUCTS FROM DB
       while (imgId.length < 3) {
         let number = Math.floor(Math.random() * images.length);
@@ -28,25 +31,18 @@ $(() => {
         <div>
         <h2>${obj.name}</h2>
         <div>
-            <h4> Product Description </h4>
-            <h3>
-            ${obj.description}
-            </h3>
-            <h3> $${obj.price}</h3>
-        </div>
-
-        <img
-        src=${obj.picture_url}
-        />
+            <h3> ${obj.description} </h3>
+            <h3> $${obj.price} </h3>
+            <img src=${obj.picture_url}/>
         </div>
         <div class= "icongroup">
-        <button class="email" > Email Me <i class="far fa-envelope"></i></button>
-        <button class="textme" > Text Me <i class="fas fa-sms"></i></button>
-        <button class="fav" > Favorite <i class="fas fa-heart"></i></button>
-        <button class="save" > Sold <i class="fas fa-handshake"></i></button>
+        <button class="email"  >Email Me <i class="far fa-envelope"></i></button>
+        <button class="textme" >Text Me  <i class="fas fa-sms"></i></button>
+        <button class="fav"    >Favorite <i class="fas fa-heart"></i></button>
+        <button class="save"   >Sold     <i class="fas fa-handshake"></i></button>
         </div>
-        </div>
-
+        <div id="favnote" align=center"></div>
+        <div id="saved" align="center"></div>
         `;
           $(".saleitem-title").prepend(markup);
           $(".email").on("click", function () {
@@ -68,11 +64,42 @@ $(() => {
               alert("SMS Sent!");
             });
           });
-          $(".textme").on("click", function () {
-            window.location.href =
-              "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go? ";
-            console.log(" you clicked me");
+          $(".fav").on("click", function () {
+            if (favorite === false) {
+              $("#favnote").empty();
+              $("#favnote").append(`<i class="fas fa-save"> Saved!</i>`);
+              // $("#saved").css("color", "red");
+              favorite = true;
+            } else {
+              $("#favnote").empty();
+              favorite = false;
+            }
+            $.ajax({
+              method: "post",
+              url: "/api/insertfav ",
+              dataType: "string",
+              data: obj,
+            }).then((response) => {
+              console.log(response);
+              // db.query(`INSERT INTO favourites (product_id) VALUES (${obj.id});`);
+            });
+
           });
+          $(".save").on("click", function () {
+          console.log(saved);
+          $("#saved").empty();
+          if (saved === false) {
+            $("#saved").empty();
+            $("#saved").append(`<i class="fas fa-hand-holding-usd"> Sold!</i>`);
+            // $("#saved").css("color", "red");
+            saved = true;
+          } else {
+            $("#saved").empty();
+            saved = false;
+          }
+
+        })
+
         });
         y++;
       }

@@ -41,11 +41,32 @@
   display: flex;
   justify-content: center;
   width: 300px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: white;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   box-shadow: 5px 5px 5px 5px #0b3948;
 }
+
+.saleitem-title h3 {
+  display: flex;
+  justify-content: center;
+  width: autopx;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+.saleitem-title img {
+  display: flex;
+  justify-content: center;
+  width: autopx;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
 
 // for single product
 
@@ -60,18 +81,31 @@
   justify-content: center;
   align-items: center;
   width: 600px;
-  height: 600px;
+  height: auto;
   margin-top: 100px;
   background-color: transparent;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   box-shadow: 5px 5px 5px 5px #0b3948;
 }
 
-.icongroup {
+.single-product-markup div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.icongroup button {
   display: flex;
   width: 250px;
-  justify-content: flex-end;
-  padding-top: 15px;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.single-product-markup #form {
+  display: flex;
+  width: 250px;
+  justify-content: center;
 }
 
 .saleitem-title h4 {
@@ -101,4 +135,11 @@ i:hover {
 .icongroup {
   display: flex;
   flex-direction: column;
+}
+
+.textme {
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  justify-content: space-between;
 }
