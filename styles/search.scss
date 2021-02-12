@@ -49,12 +49,15 @@
 }
 
 .search-results {
+  display: flex;
+  justify-content: center;
   width: 250px;
   height: 250px;
 }
 
 .search-results img {
-  max-width: 250px;
-  max-height: 250px;
-  border: 1px black solid;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px 5px #0b3948;
 }

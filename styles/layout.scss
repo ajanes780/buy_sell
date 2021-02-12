@@ -74,6 +74,16 @@ header {
   // font-family: 'Raleway', sans-serif;
 }
 
+label {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  border-color: #0b3948;
+  border-radius: 15px;
+}
+
 .title {
   display: flex;
   flex-direction: column;
