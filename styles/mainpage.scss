@@ -15,6 +15,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.descriptionandlogo img {
+  height: 200px;
+  width: 200px;
 }
 
 .create-listing {
@@ -23,6 +30,7 @@
   border: 1 px white;
   box-shadow: 0px 5px 10px 10px silver;
   border-radius: 50px;
+  opacity: 0.75;
 }
 
 button:hover,
