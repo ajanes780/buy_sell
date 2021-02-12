@@ -25,7 +25,6 @@ $(() => {
         <div>
           <h2>${obj.name}</h2>
           <div>
-              <h4> Product Description </h4>
               <h3>
               ${obj.description}
               </h3>

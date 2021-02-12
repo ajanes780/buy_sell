@@ -47,6 +47,27 @@
   box-shadow: 5px 5px 5px 5px #0b3948;
 }
 
+.saleitem-title h3 {
+  display: flex;
+  justify-content: center;
+  width: autopx;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+.saleitem-title img {
+  display: flex;
+  justify-content: center;
+  width: autopx;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  box-shadow: 5px 5px 5px 5px #0b3948;
+}
+
+
 // for single product
 
 .single-product-markup img {
@@ -71,6 +92,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
 .icongroup button {

@@ -30,7 +30,6 @@ $(() => {
         <div>
         <h2>${obj.name}</h2>
         <div>
-            <h4> Product Description </h4>
             <h3> ${obj.description} </h3>
             <h3> $${obj.price} </h3>
             <img src=${obj.picture_url}/>
