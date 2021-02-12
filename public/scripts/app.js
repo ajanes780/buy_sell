@@ -10,6 +10,7 @@ $(() => {
       let imgId = [];
       let objArray = [];
       let saved = false;
+      let favorite = false;
       //PICK 3 RANDOM PRODUCTS FROM DB
       while (imgId.length < 3) {
         let number = Math.floor(Math.random() * images.length);
@@ -41,6 +42,7 @@ $(() => {
         <button class="fav"    >Favorite <i class="fas fa-heart"></i></button>
         <button class="save"   >Sold     <i class="fas fa-handshake"></i></button>
         </div>
+        <div id="favnote" align=center"></div>
         <div id="saved" align="center"></div>
         `;
           $(".saleitem-title").prepend(markup);
@@ -64,6 +66,15 @@ $(() => {
             });
           });
           $(".fav").on("click", function () {
+            if (favorite === false) {
+              $("#favnote").empty();
+              $("#favnote").append(`<i class="fas fa-save"> Saved!</i>`);
+              // $("#saved").css("color", "red");
+              favorite = true;
+            } else {
+              $("#favnote").empty();
+              favorite = false;
+            }
             $.ajax({
               method: "post",
               url: "/api/insertfav ",
