@@ -47,6 +47,8 @@ const insertfav = require("./routes/insertfav");
 const favoriteRoutes = require("./routes/favorites");
 const twilloRoute = require("./routes/twillo");
 const createlisting = require("./routes/createlistingroute");
+const search = require("./routes/searchrouteapi");
+
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
 app.use("/api/users", usersRoutes(db));
@@ -57,6 +59,7 @@ app.use("/api/insertfav", insertfav(db));
 app.use("/api/favorites", favoriteRoutes(db));
 app.use("/api/twillo", twilloRoute(db));
 app.use("/api/createlisting", createlisting(db));
+app.use("/api/search", search(db));
 //api for favorites
 
 // Note: mount other resources here, using the same pattern above

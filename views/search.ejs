@@ -14,19 +14,21 @@
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/searchpage.js "></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
     <%- include('../views/partials/header') %>
     <div class="search-container">
-    <form class="search-form" action="/search" method="GET">
-     <div class="search-question">
-      <label for="search-text"> What Are You Looking For </label>
-      </div>
-      <textarea name="search-text" id="text-aera"></textarea>
-      <button type="submit" class="submit-button">Search</button>
-    </form>
-    <div class="search-results"></div>
-</div>
+      <form class="search-form" action="/search" method="GET">
+        <div class="search-question">
+          <label for="search-text"> What Are You Looking For </label>
+        </div>
+        <textarea name="search-text" id="text-aera"></textarea>
+        <button type="submit" class="submit-button">Search</button>
+      </form>
+      <div class="search-results" id="searchid"></div>
+    </div>
     <%- include('../views/partials/footer') %>
   </body>
 </html>

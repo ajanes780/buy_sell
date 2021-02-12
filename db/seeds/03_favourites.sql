@@ -1,6 +1,6 @@
-INSERT INTO favourites (user_id, product_id) VALUES (1, 1);
-INSERT INTO favourites (user_id, product_id) VALUES (2, 2);
-INSERT INTO favourites (user_id, product_id) VALUES (3, 3);
-INSERT INTO favourites (user_id, product_id) VALUES (1, 4);
-INSERT INTO favourites (user_id, product_id) VALUES (2, 5);
-INSERT INTO favourites (user_id, product_id) VALUES (3, 6);
+INSERT INTO favorites (product_id) VALUES (1);
+INSERT INTO favorites (product_id) VALUES (2);
+INSERT INTO favorites (product_id) VALUES (3);
+INSERT INTO favorites (product_id) VALUES (4);
+INSERT INTO favorites (product_id) VALUES (5);
+INSERT INTO favorites (product_id) VALUES (6);
