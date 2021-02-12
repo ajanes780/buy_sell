@@ -42,7 +42,7 @@ $(() => {
         <button class="fav" > Favorite <i class="fas fa-heart"></i></button>
         <button class="save" > Sold <i class="fas fa-handshake"></i></button>
         </div>
-        <div id="saved"></div>
+        <div id="saved" align="center"></div>
         `;
         $(".saleitem-title").prepend(markup);
         $(".email").on("click", function () {

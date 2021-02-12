@@ -13,6 +13,7 @@ module.exports = (db) => {
     let query = `SELECT products.id, products.name, products.price, products.picture_url, products.description
     FROM products JOIN favorites ON product_id = products.id
     GROUP BY products.id
+    ORDER BY products.id DESC
     LIMIT 5;`;
     console.log(query);
     db.query(query)
