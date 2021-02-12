@@ -25,27 +25,28 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  resize:none;
+  resize: none;
 }
 
 #text-aera {
-  resize:none;
+  resize: none;
   width: 400px;
   margin: 10px;
+  font-size: 25px;
+  color: black;
 }
 
 .submit-button {
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #0b3948;
-width: 100px;
-margin: 10px;
-color: white;
-font-size: 20px;
-border-color: #0b3948;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b3948;
+  width: 100px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  border-color: #0b3948;
 }
-
 
 .search-results {
   width: 250px;

@@ -16,7 +16,7 @@ module.exports = (db) => {
 
     let query = `SELECT name, picture_url, description, price
     FROM products
-    WHERE price <= ${value} LIMIT 10 ;`;
+    WHERE price <= ${value} LIMIT 2 ;`;
     console.log(query);
     db.query(query)
       .then((data) => {

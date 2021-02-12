@@ -5,8 +5,6 @@ $(() => {
   let $form3 = "";
   let $form4 = "";
   $(".descriptionandlogo").submit(function (event) {
-    $(".descriptionandlogo").attr("href", "http://localhost:8080/loggedin");
-
     event.preventDefault();
     $form = $("#name").val().trim();
     $form2 = $("#price").val().trim();
@@ -26,6 +24,10 @@ $(() => {
       data: myobj,
     }).then((response) => {
       console.log(" this is my response", response);
+      $("#name").val("");
+      $("#price").val("");
+      $("#description").val("");
+      $("#url").val("");
     });
   });
 });

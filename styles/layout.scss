@@ -9,7 +9,7 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   // padding: 8px;
 }
 ul {
@@ -51,6 +51,9 @@ footer {
   margin-top: 100px;
   border-top: 10px solid black;
   opacity: 0.75;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 header {
@@ -109,7 +112,7 @@ header {
   width: auto;
   height: auto;
   margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 500px;
 }
 
 // THESE ARE ALL THE CSS FOR THE LOGGED IN USERS

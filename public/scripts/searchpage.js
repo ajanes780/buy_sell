@@ -3,7 +3,6 @@ $(() => {
   let $form = "";
   $(".search-form").submit(function (event) {
     event.preventDefault();
-
     const formdata = $(this).serialize();
     $form = $("#text-aera").val().trim();
     console.log($form);

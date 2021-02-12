@@ -40,27 +40,27 @@ button:focus {
 
 #name {
   width: 400px;
-  border-radius: 50px;
+  border-radius: 30px;
   resize: none;
 }
 #price {
   width: 400px;
-  border-radius: 50px;
+  border-radius: 30px;
   resize: none;
 }
 #description {
   width: 400px;
-  border-radius: 50px;
+  border-radius: 30px;
   resize: none;
 }
 #name {
   width: 400px;
-  border-radius: 50px;
+  border-radius: 30px;
   resize: none;
 }
 #url {
   width: 400px;
-  border-radius: 50px;
+  border-radius: 30px;
   margin-bottom: 10px;
   resize: none;
 }
@@ -68,5 +68,8 @@ button:focus {
 .submit-listing {
   height: 50px;
   box-shadow: 0px 5px 10px 10px silver;
-  border-radius: 50px;
+  border-radius: 15px;
+}
+form {
+  font-size: 30px;
 }
