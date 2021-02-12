@@ -37,11 +37,10 @@ $(() => {
         />
         </div>
         <div class= "icongroup">
-        <button class="email" > Email Me </button>
-        <button class="textme" > Text Me </button>
-        <button class="fav" > Favorite </button>
-        <button class="save" > Sold </button>
-
+        <button class="email" > Email Me <i class="far fa-envelope"></i></button>
+        <button class="textme" > Text Me <i class="fas fa-sms"></i></button>
+        <button class="fav" > Favorite <i class="fas fa-heart"></i></button>
+        <button class="save" > Sold <i class="fas fa-handshake"></i></button>
         </div>
         <div id="saved"></div>
         `;
@@ -51,10 +50,20 @@ $(() => {
             "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
           console.log(obj.name);
         });
-        $(".textme").on("click", function () {
-          etPhoneHome();
-          console.log(" you clicked me");
-        });
+        //STORE ITEMS TEXT ME OPTION FROM MAIN PAGE
+        $(".textme").on("click", function (event) {
+            event.preventDefault();
+            let $form = "Hello! I would like to Inquire about your hat for sale :)"
+            let form = $form;
+            $.ajax({
+              method: "post",
+              url: "/api/twillo",
+              datatype: "string",
+              data: form,
+            }).then((response) => {
+              alert("SMS Sent!");
+            });
+          });
         $(".fav").on("click", function () {
           $.ajax({
             method: "post",

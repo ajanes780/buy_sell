@@ -31,13 +31,10 @@ $(() => {
     <form id="form" name="form" action="/api/twillo" method="POST">
           <label for="form">Are you interested in this item </label>
           <textarea name="text" id="text"></textarea>
-          <button class="textme" type="submit"> Text Me </button>
+          <button class="textme" type="submit"> Text Me <i class="fas fa-sms"></i></button>
         </form>
     <div class= "icongroup">
-    <button class="email" > Email Me </button>
-    <i class="far fa-envelope"></i>
-    <i class="fas fa-sms"></i>
-    <i class="fas fa-heart"></i>
+    <button class="email" > Email Me <i class="far fa-envelope"></i></button>
     </div>
     `;
         $(".fav-container").prepend(markup);
@@ -46,6 +43,7 @@ $(() => {
             "mailto:user@example.com?subject= I would like to buy your item &body=how low will you go ? ";
           console.log(obj.name);
         });
+        //FAVORITE ITEMS TEXT ME OPTION FROM FAVORITES PAGE
         $("#form").submit(function (event) {
           event.preventDefault();
           let $form = $("#text").val();
@@ -58,9 +56,8 @@ $(() => {
             datatype: "string",
             data: form,
           }).then((response) => {
-            alert("thank you for texting me");
+            alert("SMS Sent!");
           });
-          console.log(" you clicked me");
         });
       });
       x++;
